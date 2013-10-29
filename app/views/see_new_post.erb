@@ -1,0 +1,13 @@
+<h1> Congrats on creating your new post! </h1>
+
+	<p> <%= @post.title %></p>
+	<p> <%= @post.description %></p>
+	<p> <%= @post.location %></p>
+	<p> <%= @post.price %></p>
+	<p> <%= @post.phone %></p>
+
+	<!-- link to edit posts -->
+	<a href=<%= "/post/#{@post.id}/edit" %> > Edit </a>
+
+	<!-- link to see all posts -->
+	<a href="/posts" > See all posts </a>

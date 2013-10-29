@@ -1,0 +1,17 @@
+<h1> Edit your post information </h1>
+
+	<form action="/new_post" method="POST">
+
+		<!-- Update fields in the post -->
+
+		<label> Title <input id="title" type="text" name="title" value=<%=@post.title%>><br><br>
+		<label> Description <input id="description" type="text" name="description" value=<%=@post.description%>><br><br>
+		<label> Location <input id="location" type="text" name="location" value=<%=@post.location%>><br><br>
+		<label> Price <input id="price" type="text" name="price" value=<%=@post.price%>><br><br>
+		<label> Phone <input id="phone" type="text" name="phone" value=<%=@post.phone%>><br><br>
+
+		<!-- Submit button -->
+
+		<input type="submit" value="Submit! Change your post!">
+	
+	</form>

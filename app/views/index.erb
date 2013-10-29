@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Welcome to Craiggyslist!</h1>
+
+    <% @categories.each do |category| %>
+    <%= category.name %>
+    <br>
+    <% end %>
+
+ 
+      <br><br>
+      <!-- link to creating a new post -->
+      <th><a href="/new_post"> Create a new post</th><br><br>
+
+      <!-- link to seeing all posts -->
+      <th><a href="/posts"> See all posts</th>
+
+   
+</div>

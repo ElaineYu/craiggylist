@@ -1,0 +1,24 @@
+<table>
+	<tr>
+		<th> Title </th>
+		<th> Description </th>
+		<th> Location </th>
+		<th> Price </th>
+		<th> Phone </th>
+	</tr>
+		<% @posts.each do |post| %>
+		<tr>
+			<td><%= post.title %></td>
+			<td><%= post.description %></td>
+			<td><%= post.location %></td>
+			<td><%= post.price %></td>
+			<td><%= post.phone %></td>
+			<td><a href=<%= "/post/#{post.id}/delete" %>> Delete</a></td>
+			<td><a href=<%= "/post/#{post.id}/edit" %>> Edit </a></td>
+		</tr>
+		<% end %>
+</table>
+<br>
+ <th><a href="/new_post"> Create a new post</th><br><br>
+  <th><a href="/"> HOME </th><br><br>
+
